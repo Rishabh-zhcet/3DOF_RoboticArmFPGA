@@ -12,7 +12,10 @@ This repository contains the details of controlling a 3-DOF robotic arm with 4 s
     * [4. PWM_Generator](#4-PWM_Generator)
 * [Test Bench](#Test-Bench)
 * [Constraints File](#Constraints-File)
-* [Simulation Results] (#Simulation-Results)
+* [Simulation Results](#Simulation-Results)
+* [Acknowledgement](#Acknowledgement)
+* [Author](#Author)
+
 
 
 # Introduction
@@ -309,3 +312,11 @@ set_property PACKAGE_PIN E3  [get_ports clk]
 <p align="center">
 <b>Fig. 2 Simulation results of test bench from Vivado HLS tool</b></br>
 </p>
+
+# Acknowledgement
+
+Dr. Naushad Alam, Associate Professor, Department of Electronics Engineering, ZHCET, AMU.
+
+# Author
+
+[Rishabh Verma](https://github.com/Rishabh-zhcet), B.Tech Electronics Engineering, Zakir Husain College of Engineering and Technology (ZHCET), Aligarh Muslim University(AMU).
