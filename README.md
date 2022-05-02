@@ -12,6 +12,8 @@ This repository contains the details of controlling a 3-DOF robotic arm with 4 s
     * [4. PWM_Generator](#4-PWM_Generator)
 * [Test Bench](#Test-Bench)
 * [Constraints File](#Constraints-File)
+* [Simulation Results] (#Simulation-Results)
+
 
 # Introduction
 
@@ -295,3 +297,15 @@ set_property PACKAGE_PIN G17 [get_ports {pwm[0]}]
 #Configuring clk with internal clock pin E3
 set_property PACKAGE_PIN E3  [get_ports clk]
 ```
+
+# Simulation Results
+
+<p align="center" width="100%">
+
+   <img width="90%" src="https://user-images.githubusercontent.com/65393666/166306843-e438d8b4-4760-43ef-9696-58865ea22c47.png">
+   
+</p>
+
+<p align="center">
+<b>Fig. 2 Simulation results of test bench from Vivado HLS tool</b></br>
+</p>
