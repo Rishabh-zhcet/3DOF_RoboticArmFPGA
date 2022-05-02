@@ -13,6 +13,10 @@ This repository contains the details of controlling a 3-DOF robotic arm with 4 s
 * [Test Bench](#Test-Bench)
 * [Constraints File](#Constraints-File)
 * [Simulation Results](#Simulation-Results)
+* [Robotic Arm Design](#Robotic-Arm-Design)
+    * [Mechanical Design](#Mechanical-Design)
+    * [Construction of Robotic Arm](#Construction-of-Robotic-Arm)
+* [Conclusion](#Conclusion)
 * [Acknowledgement](#Acknowledgement)
 * [Author](#Author)
 
@@ -312,6 +316,77 @@ set_property PACKAGE_PIN E3  [get_ports clk]
 <p align="center">
 <b>Fig. 2 Simulation results of test bench from Vivado HLS tool</b></br>
 </p>
+
+# Robotic Arm Design
+
+### Mechanical Design
+
+We needed to design a 3 Degree Of Freedom (DOF) Robotic Arm with one joint at the end effector, making a total of four joints. We chose 3-DOF as we wanted to have our Robotic Arm a spherical workspace. As for picking and placing tasks, a wider workspace region is needed, so that the end effector could reach possibly every coordinate in the spherical region.
+
+<p align="center" width="20%">
+
+   <img width="20%" src="https://user-images.githubusercontent.com/65393666/166309335-d2300cdb-9d5b-44b1-8966-fab6ab997a6f.png">
+   
+</p>
+
+<p align="center">
+<b>Fig.3  DOF Robotic Arm Workspace</b></br>
+</p>
+
+
+All four joints are rotary joints with different range of angles, and are named as :-
+1.	Base Joint - The one at the base, its range of angle is 180°.
+2.	Elbow Joint - Above the base joint, its range of angle is 90°.
+3.	Wrist Joint - Between the Elbow and Gripper, its range of angle is 90°.
+4.	Gripper Joint - At the end effector, its range of angle is 30°.
+
+<p align="center" width="40%">
+
+   <img width="40%" src="https://user-images.githubusercontent.com/65393666/166309442-a8435652-9834-485b-83d3-537f28996a60.png">
+   
+</p>
+
+<p align="center">
+<b>Fig.4  Configuration of Joints</b></br>
+</p>
+
+
+### Construction of Robotic Arm
+
+For actuating the joints of the Robotic Arm, SG90 servo motors are used. These servo motors are low cost, low weight and provide pretty precise angle of rotation. Four servo motors are used, one at each joint.
+The links of the Robotic Arm are made up of light wooden ice cream sticks, each of appropriate length. These light weighted links are chosen because our servo motors can provide a torque of only upto 1.3 Kg-cm.
+ 
+<p align="center" width="20%">
+
+   <img width="40%" src="https://user-images.githubusercontent.com/65393666/166309536-bfcbdb9c-0c5c-4733-b3da-b2ddb9bf407c.png">
+   
+</p>
+
+<p align="center">
+<b>Fig.5  Actual Mechanical Design </b></br>
+</p>
+
+
+The wires of the servo motors were interfaced to the Pmod connectors of the FPGA board through a Pmod CON3 connector and were powered externally by four 1.5V cells in series (equivalent to 6V). This connector ensured that our servo motors extracted required current from the external power supply. Thus, keeping the FPGA board safe from high load of the motors.
+
+<p align="center" width="20%">
+
+   <img width="20%" src="https://user-images.githubusercontent.com/65393666/166309580-1611d862-d79e-4b5e-ac54-deec5a9cb746.png">
+   
+</p>
+
+<p align="center">
+<b>Fig.6  Pmod CON3 connector </b></br>
+</p> 
+
+
+# Conclusion
+
+In this project, we have designed a Robotic Arm and controlled it using FPGA. During this project, our major challenges were to design a mechanical structure of the Robotic Arm and implementation of behaviour of the Robotic Arm on FPGA through Verilog.	
+
+Firstly, we wrote Verilog code to simulate PWM signals with desired specifications to drive servo motors parallelly and with independent angles. We then proceeded to implement the written Verilog code on the FPGA board. In this, the use of the internal clock of FPGA was a challenge for us.
+
+As soon as we got our behavioural design implemented on the FPGA, we started working on designing the mechanical part of the Robotic Arm. The placement and attachment of servos at the joints of or 4-DOF Robotic Arm was a bit challenging. We had to place the servo motors, and decide the amount of rotation, and direction of rotation considering the mechanical restrictions of the joints of the arm.
 
 # Acknowledgement
 
