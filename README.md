@@ -1,5 +1,8 @@
 # 3DOF_RoboticArmFPGA
 This repository contains the details of controlling a 3-DOF robotic arm with 4 servo motors using FPGA. The design is prototyped using the Nexys-4 DDR Artix-7  FPGA of Xilinx. This repo contails all the files necessary to complete the project such as Verilog code, test bench and constrain file.
+
+[Click here](#https://www.canva.com/design/DAE_ARAM0e0/3zj51QhXWdK71QGhxEL8Yw/view?utm_content=DAE_ARAM0e0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink) to view the complete project presentation video.
+
 # Table of Contents:
 * [Introduction](#Introduction)
 * [Tool Used](#Tool-Used)
