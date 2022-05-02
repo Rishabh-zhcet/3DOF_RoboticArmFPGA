@@ -320,3 +320,7 @@ Dr. Naushad Alam, Associate Professor, Department of Electronics Engineering, ZH
 # Author
 
 [Rishabh Verma](https://github.com/Rishabh-zhcet), B.Tech Electronics Engineering, Zakir Husain College of Engineering and Technology (ZHCET), Aligarh Muslim University(AMU).
+
+Zaid Akhtar, B.Tech Electronics Engineering, Zakir Husain College of Engineering and Technology (ZHCET), Aligarh Muslim University(AMU).
+
+Fareha Mohammadi, B.Tech Electronics Engineering, Zakir Husain College of Engineering and Technology (ZHCET), Aligarh Muslim University(AMU).
