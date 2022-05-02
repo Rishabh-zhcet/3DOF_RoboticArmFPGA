@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k70tfbv676-1" LaunchTime="1649845679">
+  <File Type="PA-TCL" Name="Top_Module.tcl"/>
+  <File Type="REPORTS-TCL" Name="Top_Module_reports.tcl"/>
+  <File Type="BITSTR-MSK" Name="Top_Module.msk"/>
+  <File Type="RDI-RDI" Name="Top_Module.vdi"/>
+  <File Type="PA-DCP" Name="Top_Module.dcp"/>
+  <File Type="BG-BIT" Name="Top_Module.bit"/>
+  <File Type="BG-DRC" Name="Top_Module.drc"/>
+  <File Type="BG-BGN" Name="Top_Module.bgn"/>
+  <File Type="BG-BIN" Name="Top_Module.bin"/>
+  <File Type="BITSTR-RBT" Name="Top_Module.rbt"/>
+  <File Type="BITSTR-NKY" Name="Top_Module.nky"/>
+  <File Type="BITSTR-BMM" Name="Top_Module_bd.bmm"/>
+  <File Type="BITSTR-MMI" Name="Top_Module.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="Top_Module.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="Top_Module.ltx"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="OPT-DRC" Name="Top_Module_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="Top_Module.hwdef"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="Top_Module_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-DCP" Name="Top_Module_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="Top_Module_routed_error.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="Top_Module_routed_bb.dcp"/>
+  <File Type="ROUTE-TIMING-PB" Name="Top_Module_timing_summary_routed.pb"/>
+  <File Type="OPT-DCP" Name="Top_Module_opt.dcp"/>
+  <File Type="PLACE-DCP" Name="Top_Module_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="Top_Module_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="Top_Module_postplace_pwropt.dcp"/>
+  <File Type="PHYSOPT-DCP" Name="Top_Module_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="Top_Module_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="Top_Module_postroute_physopt_bb.dcp"/>
+  <File Type="PDI-FILE" Name="Top_Module.pdi"/>
+  <File Type="RCFI_FILE" Name="Top_Module.rcfi"/>
+  <File Type="CFI_FILE" Name="Top_Module.cfi"/>
+  <File Type="RNPI_FILE" Name="Top_Module.rnpi"/>
+  <File Type="NPI_FILE" Name="Top_Module.npi"/>
+  <File Type="RBD_FILE" Name="Top_Module.rbd"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/Angle_to_on_time.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PIPO_shift_register.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PWM_generator.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Top_Module.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="Top_Module"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/Robotic_Arm_Constt.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2020"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+    <Step Id="write_device_image"/>
+  </Strategy>
+</GenRun>
