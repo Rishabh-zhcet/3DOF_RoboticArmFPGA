@@ -326,9 +326,9 @@ set_property PACKAGE_PIN E3  [get_ports clk]
 
 We needed to design a 3 Degree Of Freedom (DOF) Robotic Arm with one joint at the end effector, making a total of four joints. We chose 3-DOF as we wanted to have our Robotic Arm a spherical workspace. As for picking and placing tasks, a wider workspace region is needed, so that the end effector could reach possibly every coordinate in the spherical region.
 
-<p align="center" width="20%">
+<p align="center" width="30%">
 
-   <img width="20%" src="https://user-images.githubusercontent.com/65393666/166309335-d2300cdb-9d5b-44b1-8966-fab6ab997a6f.png">
+   <img width="30%" src="https://user-images.githubusercontent.com/65393666/166309335-d2300cdb-9d5b-44b1-8966-fab6ab997a6f.png">
    
 </p>
 
@@ -372,9 +372,9 @@ The links of the Robotic Arm are made up of light wooden ice cream sticks, each 
 
 The wires of the servo motors were interfaced to the Pmod connectors of the FPGA board through a Pmod CON3 connector and were powered externally by four 1.5V cells in series (equivalent to 6V). This connector ensured that our servo motors extracted required current from the external power supply. Thus, keeping the FPGA board safe from high load of the motors.
 
-<p align="center" width="20%">
+<p align="center" width="40%">
 
-   <img width="20%" src="https://user-images.githubusercontent.com/65393666/166309580-1611d862-d79e-4b5e-ac54-deec5a9cb746.png">
+   <img width="40%" src="https://user-images.githubusercontent.com/65393666/166309580-1611d862-d79e-4b5e-ac54-deec5a9cb746.png">
    
 </p>
 
