@@ -29,9 +29,17 @@ This repository contains the details of controlling a 3-DOF robotic arm with 4 s
 
 In this rapidly changing world, automation is becoming an essential part of almost every industry, be it manufacturing or the healthcare field. When we talk about automation, the first thing that comes to our mind is a robot. Robotics and automation are two distinct technologies but these terms are often used interchangeably. Together, they have tremendously transformed the manufacturing space. Pertaining to the manufacturing world, the most commonly used robot is the Robotic Arm. The Robotic Arm can be used in several manufacturing applications ranging from the assembly line to fault detection and packaging.
 
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/166416962-76e2d30b-7ef7-416d-874c-54929c5c0571.png">
+   
+</p>
+
 There are two ways of controlling the robotic arm to perform a particular task. A popular method is to use a microcontroller. A microcontroller based Robotic Arm offers programmability. However, this approach is a bit slower as it has to perform memory read/write operations to execute the instructions. Another approach can be to design a custom ASIC package to implement the Robotic Arm task algorithm. Custom ASIC package offers high speed. Nevertheless, it is costly for low volume production and it takes time to get the chip manufactured. A middle path is to use and FPGA to implement the Robotic Arm controller. FPGA offers programmability and is a quick way of getting the prototype ready. It is also the favoured technology for low volume applications.
 
 We have used FPGA approach in our project. We have done prototyping using Nexys4DDR board equipped with Xilinx Artix-7 series FPGA. In addition, we have used SG90 servo motors for actuating the Robotic Arm. Verilog HDL has been used for programming the FPGA. The simulation and FPGA implementation of the design has been carried out using the Xilinx Vivado tool. We have designed a prototype of a Robotic Arm controller with 4-DOF (Degree of Freedom). The proposed arm is designed to operate manually and automatically to perform a particular action.
+
+
 
 # Tool Used
 
@@ -49,6 +57,13 @@ The Vivado Design Suite is a collection of Xilinx tools for designing, programmi
 Vivado is an integrated design environment (IDE) featuring system-to-IC level capabilities built on a shared scalable data model and a common debug environment that was released in April 2012. Vivado offers ESL design tools for synthesising and testing C-based algorithmic IP; standards-based packaging of both algorithmic and RTL IP for reuse; standards-based IP stitching and systems integration of all types of system building blocks; and block and system verification. The Vivado Webpack Edition is a free version of the design environment that provides designers with a limited version of the design environment.
 
 Vivado HLS enables a software engineer to optimise code for throughput, power, and latency without having to deal with the performance bottleneck of a single memory area and restricted computing resources by targeting an FPGA as the execution fabric. This enables the incorporation of computationally costly software algorithms into genuine goods rather than merely functionality demos. The same categories apply to application code targeted at the Vivado HLS compiler as they do to any other processor compiler. All programs are analysed in terms of operations, conditional statements, loops, and functions using Vivado HLS.
+
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/166420031-fda1a91c-3ab3-4eac-a63d-e2fc4243d68d.png">
+   
+</p>
+
 
 # Algorithm
 
@@ -391,6 +406,12 @@ Firstly, we wrote Verilog code to simulate PWM signals with desired specificatio
 
 As soon as we got our behavioural design implemented on the FPGA, we started working on designing the mechanical part of the Robotic Arm. The placement and attachment of servos at the joints of or 4-DOF Robotic Arm was a bit challenging. We had to place the servo motors, and decide the amount of rotation, and direction of rotation considering the mechanical restrictions of the joints of the arm.
 
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/166420217-90d0d5d5-bf36-412a-91bc-bd4df31810fc.png">
+   
+</p>
+
 # Acknowledgement
 
 Dr. Naushad Alam, Associate Professor, Department of Electronics Engineering, ZHCET, AMU.
@@ -402,3 +423,10 @@ Dr. Naushad Alam, Associate Professor, Department of Electronics Engineering, ZH
 Zaid Akhtar, B.Tech Electronics Engineering, Zakir Husain College of Engineering and Technology (ZHCET), Aligarh Muslim University(AMU).
 
 Fareha Mohammadi, B.Tech Electronics Engineering, Zakir Husain College of Engineering and Technology (ZHCET), Aligarh Muslim University(AMU).
+
+<p align="center" width="100%">
+
+   <img width="100%" src="https://user-images.githubusercontent.com/65393666/166419869-0d2c48c7-b679-45b6-a515-575166774c1a.png">
+   
+</p>
+
