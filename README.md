@@ -64,7 +64,7 @@ Fig. 4.2 shows the schematic view of the proposed solution. The concept was to u
 
 <p align="center" width="100%">
 
-   <img width="100%" src="https://user-images.githubusercontent.com/65393666/166303548-4248fde1-4c0f-4968-8402-e6ea529d137f.png">
+   <img width="90%" src="https://user-images.githubusercontent.com/65393666/166303548-4248fde1-4c0f-4968-8402-e6ea529d137f.png">
    
 </p>
 
