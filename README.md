@@ -24,7 +24,6 @@ This repository contains the details of controlling a 3-DOF robotic arm with 4 s
 * [Author](#Author)
 
 
-
 # Introduction
 
 In this rapidly changing world, automation is becoming an essential part of almost every industry, be it manufacturing or the healthcare field. When we talk about automation, the first thing that comes to our mind is a robot. Robotics and automation are two distinct technologies but these terms are often used interchangeably. Together, they have tremendously transformed the manufacturing space. Pertaining to the manufacturing world, the most commonly used robot is the Robotic Arm. The Robotic Arm can be used in several manufacturing applications ranging from the assembly line to fault detection and packaging.
